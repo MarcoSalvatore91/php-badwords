@@ -1,6 +1,10 @@
+/* GENERICS */
+
 * {
   text-align: center;
 }
+
+/* Title */
 
 h1 {
   color: red;
@@ -10,10 +14,26 @@ h3 {
   color: red;
 }
 
+/* censure.php */
+
 #censure-word {
   margin-top: 100px;
 }
 
 .btn {
   color: red;
+}
+
+/* censure.php - icon */
+
+.icon {
+  margin-top: 50px;
+}
+
+a {
+  text-align: center;
+}
+
+i {
+  padding: 0 30px;
 }
