@@ -2,10 +2,6 @@
 
 $text = "Lorem ipsum dolor sit amet consectetur, adipisicing elit.";
 
-$censure = $_GET['censure'];
-
-$text_censure = str_replace("consectetur", $censure, $text);
-
 ?>
 
 <!DOCTYPE html>
@@ -33,15 +29,14 @@ $text_censure = str_replace("consectetur", $censure, $text);
 
     </div>
 
-    <div id="censure">
+    <div id="censure-word">
 
-        <h1>Testo con censura</h1>
+        <h3>Quale parola vuoi censurare?</h3>
 
-        <h3>Testo</h3>
-        <p><?php echo $text_censure ?></p>
-
-        <h3>Lunghezza testo</h3>
-        <p><?php echo strlen($text_censure) ?></p>
+        <form action="censure.php" method="GET">
+            <input type="text" placeholder="Inserisci una parola" name="censure">
+            <button type="submit">PREMI QUI</button>
+        </form>
 
     </div>
 
